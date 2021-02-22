@@ -1,0 +1,147 @@
+$primary-font: "Heebo", sans-serif;
+$secondary-font: "Open Sans", sans-serif;
+$font-weight: (
+  "reg": 400,
+  "med": 500,
+  "bold": 700,
+);
+// $topDark: #cecece;
+// $topLight: #1d1d1d;
+$logoYellow: #d4c956;
+$logoDark: #474644;
+$sectionGap: 15vh;
+
+@mixin flexCenter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@function weight($weight-name) {
+  @return mp-get($font-weight, $weight-name);
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  background-color: #1d1d1d;
+}
+
+.main-logo {
+  max-height: 25vh;
+  width: auto;
+  display: block;
+}
+
+h1 {
+  font-family: $primary-font;
+  font-weight: weight(med);
+  // @include flexCenter;
+  font-size: 44px;
+  padding-top: 10vh;
+  color: $logoYellow;
+  margin-bottom: 20px;
+}
+
+h2 {
+  font-family: $primary-font;
+  font-weight: weight(med);
+  font-size: 38px;
+  color: #ffffff;
+  text-align: center;
+  margin-bottom: 16px;
+}
+
+p,
+li {
+  font-family: $secondary-font;
+  font-size: 20px;
+  color: white;
+}
+
+h3 {
+  color: $logoYellow;
+}
+
+.header-title {
+  padding-left: 2%;
+}
+
+.main {
+  max-width: 1128px;
+  padding-left: 24px;
+  padding-right: 24px;
+}
+
+.presale,
+.features,
+.features-under,
+.NFT,
+.roadmap,
+.follow {
+  padding-top: $sectionGap;
+  max-width: 1128px;
+  padding-left: 24px;
+  padding-right: 24px;
+}
+
+.NFT {
+  text-align: center;
+}
+
+hr {
+  color: $logoYellow;
+  width: 80%;
+  margin: 0 auto;
+  margin-top: $sectionGap;
+}
+
+.follow {
+  //   margin: 0 auto;
+  // justify-content: center;
+  // align-items: center;
+  // display: flex;
+  color: $logoDark;
+}
+
+.follow-box {
+  background: #474644;
+  padding: 64px 32px;
+}
+
+a,
+span {
+  color: white;
+}
+
+.token {
+  overflow-wrap: anywhere;
+}
+
+.links {
+  padding-top: 50px;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.icons {
+  margin: 30px;
+  color: $logoYellow;
+  transition: ease-in-out 300ms;
+}
+
+.icons:hover {
+  color: #0b59ca;
+  transform: scale(1.2);
+}
+
+.button {
+  font: $primary-font;
+}
+
+// @media screen and (min-width: 1400px) {
+//   body {
+//     margin-right: 2%;
+//     background-color: blue;
+//   }
+// }

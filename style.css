@@ -1,0 +1,119 @@
+body {
+  width: 100%;
+  height: 100%;
+  background-color: #1d1d1d;
+}
+
+.main-logo {
+  max-height: 25vh;
+  width: auto;
+  display: block;
+}
+
+h1 {
+  font-family: "Heebo", sans-serif;
+  font-weight: mp-get(("reg": 400, "med": 500, "bold": 700), med);
+  font-size: 44px;
+  padding-top: 10vh;
+  color: #d4c956;
+  margin-bottom: 20px;
+}
+
+h2 {
+  font-family: "Heebo", sans-serif;
+  font-weight: mp-get(("reg": 400, "med": 500, "bold": 700), med);
+  font-size: 38px;
+  color: #ffffff;
+  text-align: center;
+  margin-bottom: 16px;
+}
+
+p,
+li {
+  font-family: "Open Sans", sans-serif;
+  font-size: 20px;
+  color: white;
+}
+
+h3 {
+  color: #d4c956;
+}
+
+.header-title {
+  padding-left: 2%;
+}
+
+.main {
+  max-width: 1128px;
+  padding-left: 24px;
+  padding-right: 24px;
+}
+
+.presale,
+.features,
+.features-under,
+.NFT,
+.roadmap,
+.follow {
+  padding-top: 15vh;
+  max-width: 1128px;
+  padding-left: 24px;
+  padding-right: 24px;
+}
+
+.NFT {
+  text-align: center;
+}
+
+hr {
+  color: #d4c956;
+  width: 80%;
+  margin: 0 auto;
+  margin-top: 15vh;
+}
+
+.follow {
+  color: #474644;
+}
+
+.follow-box {
+  background: #474644;
+  padding: 64px 32px;
+}
+
+a,
+span {
+  color: white;
+}
+
+.token {
+  overflow-wrap: anywhere;
+}
+
+.links {
+  padding-top: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.icons {
+  margin: 30px;
+  color: #d4c956;
+  -webkit-transition: ease-in-out 300ms;
+  transition: ease-in-out 300ms;
+}
+
+.icons:hover {
+  color: #0b59ca;
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+.button {
+  font: "Heebo", sans-serif;
+}
+/*# sourceMappingURL=style.css.map */

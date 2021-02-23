@@ -12,7 +12,7 @@ body {
 
 h1 {
   font-family: "Heebo", sans-serif;
-  font-weight: mp-get(("reg": 400, "med": 500, "bold": 700), med);
+  font-weight: mp-get(("reg": 400, "med": 500, "bold": 900), med);
   font-size: 44px;
   padding-top: 10vh;
   color: #d4c956;
@@ -21,7 +21,7 @@ h1 {
 
 h2 {
   font-family: "Heebo", sans-serif;
-  font-weight: mp-get(("reg": 400, "med": 500, "bold": 700), med);
+  font-weight: mp-get(("reg": 400, "med": 500, "bold": 900), med);
   font-size: 38px;
   color: #ffffff;
   text-align: center;
@@ -33,6 +33,7 @@ li {
   font-family: "Open Sans", sans-serif;
   font-size: 20px;
   color: white;
+  list-style-type: none;
 }
 
 h3 {
@@ -43,6 +44,10 @@ h3 {
   padding-left: 2%;
 }
 
+strong {
+  color: #56595d;
+}
+
 .main {
   max-width: 1128px;
   padding-left: 24px;
@@ -50,9 +55,7 @@ h3 {
 }
 
 .presale,
-.features,
-.features-under,
-.NFT,
+.nft,
 .roadmap,
 .follow {
   padding-top: 15vh;
@@ -61,7 +64,11 @@ h3 {
   padding-right: 24px;
 }
 
-.NFT {
+.charts {
+  padding-top: 10vh;
+}
+
+.nft {
   text-align: center;
 }
 
@@ -86,12 +93,16 @@ span {
   color: white;
 }
 
+.nft-span {
+  color: #56595d;
+}
+
 .token {
   overflow-wrap: anywhere;
 }
 
 .links {
-  padding-top: 50px;
+  padding-top: 80px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -114,6 +125,46 @@ span {
 }
 
 .button {
-  font: "Heebo", sans-serif;
+  font: "Heebo", sans-serif !important;
+  padding: 15px 40px;
+  margin-right: 10px;
+  margin-top: 15px;
+}
+
+@media screen and (max-width: 588px) {
+  .main-logo {
+    margin: 0 auto;
+  }
+  .logo-top {
+    max-height: 40vh;
+  }
+  h1 {
+    padding-top: 2vh;
+  }
+  .links {
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+  .header-title,
+  .presale,
+  .charts,
+  .nft,
+  .follow {
+    text-align: center;
+  }
+  .follow h3 {
+    padding-bottom: 10px;
+  }
+}
+
+.chart1 {
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+}
+
+.chart2 {
+  height: auto;
+  margin: 0 auto;
 }
 /*# sourceMappingURL=style.css.map */

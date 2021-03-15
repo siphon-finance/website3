@@ -38,6 +38,7 @@ li {
 
 h3 {
   color: #d4c956;
+  font-size: 1.85rem;
 }
 
 .header-title {
@@ -45,7 +46,7 @@ h3 {
 }
 
 strong {
-  color: #56595d;
+  color: #5c6064;
 }
 
 .main {
@@ -58,7 +59,7 @@ strong {
 .nft,
 .roadmap,
 .follow,
-.charts-under {
+.charts {
   padding-top: 15vh;
   max-width: 1128px;
   padding-left: 24px;
@@ -66,18 +67,39 @@ strong {
 }
 
 .charts {
-  padding-top: 10vh;
+  padding-top: 15vh;
+  padding-bottom: 15vh;
+}
+
+.chart1, .chart2 {
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+}
+
+.charts p {
+  padding-top: 7vh;
+}
+
+.charts-bottom {
+  padding-bottom: 15vh;
 }
 
 .nft {
   text-align: center;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  /* don't forget to set a duration! */
+}
+
+.hidden {
+  display: none;
 }
 
 hr {
   color: #d4c956;
   width: 80%;
   margin: 0 auto;
-  margin-top: 15vh;
 }
 
 .follow {
@@ -100,6 +122,7 @@ span {
 
 .token {
   overflow-wrap: anywhere;
+  font-size: 20px;
 }
 
 .links {
@@ -121,8 +144,6 @@ span {
 
 .icons:hover {
   color: #0b59ca;
-  -webkit-transform: scale(1.2);
-          transform: scale(1.2);
 }
 
 .button {
@@ -130,6 +151,10 @@ span {
   padding: 15px 40px;
   margin-right: 10px;
   margin-top: 15px;
+}
+
+.fund-dist, .presale-target {
+  padding-top: 5vh;
 }
 
 @media screen and (max-width: 588px) {
@@ -151,7 +176,7 @@ span {
   }
   .header-title,
   .presale,
-  .charts,
+  .charts, .charts-bottom,
   .nft,
   .follow {
     text-align: center;
@@ -159,21 +184,8 @@ span {
   .follow h3 {
     padding-bottom: 10px;
   }
-}
-
-.chart1 {
-  width: 100%;
-  height: auto;
-  margin: 0 auto;
-}
-
-.chart2 {
-  width: 100%;
-  height: auto;
-  margin: 0 auto;
-}
-
-.charts p {
-  padding-top: 7vh;
+  .section-under {
+    padding-top: 3vh;
+  }
 }
 /*# sourceMappingURL=style.css.map */

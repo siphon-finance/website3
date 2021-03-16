@@ -141,7 +141,6 @@ span {
 }
 
 .icons {
-  margin: 30px;
   color: #d4c956;
   -webkit-transition: ease-in-out 300ms;
   transition: ease-in-out 300ms;
@@ -176,6 +175,9 @@ span {
   .links {
     padding-top: 15px;
     padding-bottom: 15px;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
   }
   .charts p {
     padding-top: 0vh !important;

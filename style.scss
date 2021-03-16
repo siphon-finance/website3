@@ -169,7 +169,6 @@ span {
 }
 
 .icons {
-  margin: 30px;
   color: $logoYellow;
   transition: ease-in-out 300ms;
 }
@@ -206,6 +205,7 @@ span {
   .links {
     padding-top: 15px;
     padding-bottom: 15px;
+    justify-content: space-between;
   }
 
   .charts p {

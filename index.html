@@ -16,10 +16,15 @@
     <link rel="mask-icon" href="/favicon_package_v0.16/safari-pinned-tab.svg" color="#5bbad5">
     <meta name="msapplication-TileColor" content="#da532c">
     <meta name="theme-color" content="#ffffff">
-    <link
+    <!-- <link
     rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
-    <link rel="stylesheet" href="style.css">
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/> -->
+    <link rel="stylesheet" href="./css/animations.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <noscript>
+        <link rel="stylesheet" href="./css/styleNoscript.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    </noscript>
 </head>
 <body>
     <div class="container-fluid header-logo main">
@@ -58,75 +63,81 @@
             </div>
         </div>
 
-        <div class="row charts charts-top">
-            <div class="col-lg-4 col-xs-1">
-                <p><strong>Siphoned Funds:</strong>
-                    <br>
-                    27.5% used to Buyback SPHN / added to SPHN/BNB liquidity
-                    27.5% used to buy BNB / added to SPHN/BNB liquidity
-                    20% stays in vault to continue compounding for later use
-                    10% sent to Siphon NFT holders
-                    5% sent to treasury as BNB
-                    5% Buyback SPHN to burn it forever
-                    5% sent to dev wallet as BNB</p>
+        <div class="animatedParent">
+            <div class="row charts charts-top">
+                <div class="col-lg-4 col-xs-1">
+                    <p><strong>Siphoned Funds:</strong>
+                        <br>
+                        27.5% used to Buyback SPHN / added to SPHN/BNB liquidity
+                        27.5% used to buy BNB / added to SPHN/BNB liquidity
+                        20% stays in vault to continue compounding for later use
+                        10% sent to Siphon NFT holders
+                        5% sent to treasury as BNB
+                        5% Buyback SPHN to burn it forever
+                        5% sent to dev wallet as BNB</p>
+                </div>
+                <div class="col-lg-8 col-xs-1 section-under">
+                    <img src="./images/newgraph1.jpg" alt="" class="chart1">
+                </div>
+                <!-- <div class="col-lg-4 col-sm-6"><p>1   Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vitae tempora cupiditate ipsam! Minima aperiam quam voluptates sapiente ducimus totam corporis? Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p></div>
+                <div class="col-lg-4 col-sm-6"><p>2   Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vitae tempora cupiditate ipsam! Minima aperiam quam voluptates sapiente ducimus totam corporis? Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p></div>
+                <div class="col-lg-4 col-sm-12"><p>3   Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vitae tempora cupiditate ipsam! Minima aperiam quam voluptates sapiente ducimus totam corporis? Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p></div> -->
             </div>
-            <div class="col-lg-8 col-xs-1 section-under">
-                <img src="./images/newgraph1.jpg" alt="" class="chart1">
-            </div>
-            <!-- <div class="col-lg-4 col-sm-6"><p>1   Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vitae tempora cupiditate ipsam! Minima aperiam quam voluptates sapiente ducimus totam corporis? Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p></div>
-            <div class="col-lg-4 col-sm-6"><p>2   Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vitae tempora cupiditate ipsam! Minima aperiam quam voluptates sapiente ducimus totam corporis? Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p></div>
-            <div class="col-lg-4 col-sm-12"><p>3   Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vitae tempora cupiditate ipsam! Minima aperiam quam voluptates sapiente ducimus totam corporis? Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p></div> -->
         </div>
-        <div class="row charts-bottom">
-            <div class="col-lg-8 col-xs-1">
-                <img src="./images/newgraph2.jpg" alt="" class="chart2">
-            </div>
-            <div class="col-lg-4 col-xs-1 section-under">
-                <p><strong>Tokenomics:</strong>
-                    <br>
-                    100k max total
-                    32k presale $3 each = $96k
-                    10k Dev fund locked in 5k and 5k 1 month and 3 months
-                    20k treasury for things like listings and paying for external services
-                    9.6k locked in liquidity with 32k in bnb from presale ($3.333 list price) (64k initial team liquidity)
-                    10k staking pool for IFO partner
-                    18k (phase 2) TBA LOCKED 30 days
-                    400 airdrop</p>
+        <div class="animatedParent">
+            <div class="row charts-bottom">
+                <div class="col-lg-8 col-xs-1">
+                    <img src="./images/newgraph2.jpg" alt="" class="chart2">
+                </div>
+                <div class="col-lg-4 col-xs-1 section-under">
+                    <p><strong>Tokenomics:</strong>
+                        <br>
+                        100k max total
+                        32k presale $3 each = $96k
+                        10k Dev fund locked in 5k and 5k 1 month and 3 months
+                        20k treasury for things like listings and paying for external services
+                        9.6k locked in liquidity with 32k in bnb from presale ($3.333 list price) (64k initial team liquidity)
+                        10k staking pool for IFO partner
+                        18k (phase 2) TBA LOCKED 30 days
+                        400 airdrop</p>
+                </div>
             </div>
         </div>
 
         <hr>
 
-        <div class="row nft">
-            <div>
-                <h2>NFT</h2>
-            </div>
-            <div class="col"><p>Siphon NFT’s will be sent to the top 20 presale investors who purchase 150 tokens or more.
-                if you continue to hold the 150 tokens and the NFT you will be sent an equal portion of 10% of the siphon divided between the others who also meet the requirements. (approximately $70 monthly to start, growing with every siphon)
-                <br>
-                <span class="nft-span"><em>*it is possible to sell your NFT in an NFT market, but the person buying it will need to hold 150+ SPHN in order to qualify to receive a share of the siphon</em></span></p></div>
-        </div>
-
-        <div class="row roadmap">
-            <div>
-                <h2>Roadmap</h2>
-            </div>
-            <div class="col">
-                <ul>
-                    <li>Token Launch</li>
-                    <li>Setup first siphon</li>
-                    <li>Establish "DAO/VIP"</li>
-                    <li>"Phase 2"</li>
-                    <li>NFT Sale</li>
-                    <li>Establish Second Siphon</li>
-                    <li>Start Yield Farm (high apy single asset, Jets, Moo-bifi, Hypr, BHC etc</li>
-                    <li>Use 2nd (or 3rd) siphon to buyback and burn yieldfarm tokens</li>
-                    <li>Establish lottery to burn yield farm tokens win % of siphon </li>
-                    <li>Establish another siphon to be used to buy stablecoins to add to stable pool to create a siphon savings stablecoin that constantly increases in value</li>
-                </ul>
+        <div class="animatedParent">
+            <div class="row nft animated fadeInUp">
+                <div>
+                    <h2>NFT</h2>
+                </div>
+                <div class="col"><p>Siphon NFT’s will be sent to the top 20 presale investors who purchase 150 tokens or more.
+                    if you continue to hold the 150 tokens and the NFT you will be sent an equal portion of 10% of the siphon divided between the others who also meet the requirements. (approximately $70 monthly to start, growing with every siphon)
+                    <br>
+                    <span class="nft-span"><em>*it is possible to sell your NFT in an NFT market, but the person buying it will need to hold 150+ SPHN in order to qualify to receive a share of the siphon</em></span></p></div>
             </div>
         </div>
-
+        <div class="animatedParent">
+            <div class="row roadmap animated fadeInUp">
+                <div>
+                    <h2>Roadmap</h2>
+                </div>
+                <div class="col">
+                    <ul>
+                        <li>Token Launch</li>
+                        <li>Setup first siphon</li>
+                        <li>Establish "DAO/VIP"</li>
+                        <li>"Phase 2"</li>
+                        <li>NFT Sale</li>
+                        <li>Establish Second Siphon</li>
+                        <li>Start Yield Farm (high apy single asset, Jets, Moo-bifi, Hypr, BHC etc</li>
+                        <li>Use 2nd (or 3rd) siphon to buyback and burn yieldfarm tokens</li>
+                        <li>Establish lottery to burn yield farm tokens win % of siphon </li>
+                        <li>Establish another siphon to be used to buy stablecoins to add to stable pool to create a siphon savings stablecoin that constantly increases in value</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
         <div class="row follow">
             <div class="col">
                 <div class="follow-box">
@@ -178,6 +189,8 @@
 
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
-    <script src="./script.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="./js/css3-animate-it.js"></script>
+    <script src="./js/script.js"></script>
 </body>
 </html>

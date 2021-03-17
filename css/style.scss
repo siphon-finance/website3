@@ -1,7 +1,35 @@
+$primary-font: "Heebo", sans-serif;
+$secondary-font: "Open Sans", sans-serif;
+$font-weight: (
+  "reg": 400,
+  "med": 500,
+  "bold": 900,
+);
+// $topDark: #cecece;
+// $topLight: #1d1d1d;
+$logoYellow: #d4c956;
+$logoDark: #474644;
+$sectionGap: 15vh;
+
+@mixin flexCenter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@function weight($weight-name) {
+  @return mp-get($font-weight, $weight-name);
+}
+
 body {
   width: 100%;
   height: 100%;
+
+  // background: url(./images/videoblocks-blue-business-background-2_h3cvzluwb_thumbnail-full01.png); *** NEEDS TO CHANGE ***
+
   background-color: #1d1d1d;
+
+  // filter: grayscale(20%);
   line-height: 2em;
 }
 
@@ -13,17 +41,18 @@ body {
 }
 
 h1 {
-  font-family: "Heebo", sans-serif;
-  font-weight: mp-get(("reg": 400, "med": 500, "bold": 900), med);
+  font-family: $primary-font;
+  font-weight: weight(med);
+  // @include flexCenter;
   font-size: 44px;
   padding-top: 10vh;
-  color: #d4c956;
+  color: $logoYellow;
   margin-bottom: 20px;
 }
 
 h2 {
-  font-family: "Heebo", sans-serif;
-  font-weight: mp-get(("reg": 400, "med": 500, "bold": 900), med);
+  font-family: $primary-font;
+  font-weight: weight(med);
   font-size: 38px;
   color: #ffffff;
   text-align: center;
@@ -36,14 +65,14 @@ h2 {
 
 p,
 li {
-  font-family: "Open Sans", sans-serif;
+  font-family: $secondary-font;
   font-size: 20px;
   color: white;
   list-style: circle;
 }
 
 h3 {
-  color: #d4c956;
+  color: $logoYellow;
   font-size: 1.85rem;
 }
 
@@ -52,6 +81,7 @@ h3 {
 }
 
 strong {
+  $font-weight: "bold";
   color: #5c6064;
 }
 
@@ -65,27 +95,24 @@ strong {
 .nft,
 .follow,
 .charts {
-  padding-top: 15vh;
+  padding-top: $sectionGap;
   max-width: 1128px;
   padding-left: 24px;
   padding-right: 24px;
 }
 
 .roadmap {
-  padding-top: 15vh;
+  // padding-left: 24px;
+  // padding-right: 24px;
+  padding-top: $sectionGap;
   width: 65%;
   margin: 0 auto;
-}
-
-.charts-top {
-  -webkit-animation-duration: 3s;
-          animation-duration: 3s;
-  /* don't forget to set a duration! */
+  // animation-duration: 3s;
 }
 
 .charts {
-  padding-top: 15vh;
-  padding-bottom: 15vh;
+  padding-top: $sectionGap;
+  padding-bottom: $sectionGap
 }
 
 .chart1, .chart2 {
@@ -98,29 +125,26 @@ strong {
   padding-top: 7vh;
 }
 
+
 .charts-bottom {
-  padding-bottom: 15vh;
-  -webkit-animation-duration: 3s;
-          animation-duration: 3s;
-  /* don't forget to set a duration! */
+  padding-bottom: $sectionGap;
+  // animation-duration: 3s; /* don't forget to set a duration! */
 }
 
 .nft {
   text-align: center;
-}
-
-.hidden {
-  display: none;
+  // animation-duration: 8s;
 }
 
 hr {
-  color: #d4c956;
+  color: $logoYellow;
   width: 80%;
   margin: 0 auto;
+  // margin-top: $sectionGap;
 }
 
 .follow {
-  color: #474644;
+  color: $logoDark;
 }
 
 .follow-box {
@@ -144,17 +168,12 @@ span {
 
 .links {
   padding-top: 80px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+  justify-content: space-evenly;
 }
 
 .icons {
-  color: #d4c956;
-  -webkit-transition: ease-in-out 300ms;
+  color: $logoYellow;
   transition: ease-in-out 300ms;
 }
 
@@ -163,7 +182,7 @@ span {
 }
 
 .button {
-  font: "Heebo", sans-serif !important;
+  font: $primary-font !important;
   padding: 15px 40px;
   margin-right: 10px;
   margin-top: 15px;
@@ -177,23 +196,26 @@ span {
   .main-logo {
     margin: 0 auto;
   }
+
   .logo-top {
     max-height: 40vh;
     max-width: 100%;
   }
+
   h1 {
     padding-top: 2vh;
   }
+
   .links {
     padding-top: 15px;
     padding-bottom: 15px;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    justify-content: space-between;
   }
+
   .charts p {
     padding-top: 0vh !important;
   }
+
   .header-title,
   .presale,
   .charts, .charts-bottom,
@@ -201,11 +223,12 @@ span {
   .follow {
     text-align: center;
   }
+
   .follow h3 {
     padding-bottom: 10px;
   }
+
   .section-under {
     padding-top: 3vh;
   }
 }
-/*# sourceMappingURL=style.css.map */

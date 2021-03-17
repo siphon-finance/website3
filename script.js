@@ -1,3 +1,18 @@
+window.onload = function(){
+  const animateChartTop = document.querySelector('.charts-top')
+  const animateChartBottom = document.querySelector('.charts-bottom')
+  const animateNft = document.querySelector('.nft')
+  const animateRoadmap = document.querySelector('.roadmap')
+  
+
+  animateChartTop.classList.add('hidden')
+  animateChartBottom.classList.add('hidden')
+  animateNft.classList.add('hidden')
+  animateRoadmap.classList.add('hidden')
+
+}
+ 
+
 function isInViewport(element) {
     const rect = element.getBoundingClientRect();
     const html = document.documentElement;
@@ -9,9 +24,19 @@ function isInViewport(element) {
     );
   }
 
-const animateEl = document.querySelector('.nft')
+const animateChartTop = document.querySelector('.charts-top')
 window.addEventListener('scroll', function(event) {
-    if (isInViewport(animateEl)) {
-        animateEl.classList.add('animate__slideInLeft')
+    if (isInViewport(animateChartTop)) {
+        animateChartTop.classList.add('animate__slideInLeft')
+        animateChartTop.classList.remove('hidden')
     }
 })
+
+const animateChartBottom = document.querySelector('.charts-bottom')
+window.addEventListener('scroll', function(event) {
+    if (isInViewport(animateChartBottom)) {
+        animateChartBottom.classList.add('animate__slideInRight')
+        animateChartBottom.classList.remove('hidden')
+    }
+})
+

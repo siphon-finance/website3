@@ -30,6 +30,7 @@ body {
   background-color: #1d1d1d;
 
   // filter: grayscale(20%);
+  line-height: 2em;
 }
 
 .main-logo {
@@ -67,7 +68,7 @@ li {
   font-family: $secondary-font;
   font-size: 20px;
   color: white;
-  list-style-type: none;
+  list-style: circle;
 }
 
 h3 {
@@ -92,13 +93,25 @@ strong {
 
 .presale,
 .nft,
-.roadmap,
 .follow,
 .charts {
   padding-top: $sectionGap;
   max-width: 1128px;
   padding-left: 24px;
   padding-right: 24px;
+}
+
+.roadmap {
+  // padding-left: 24px;
+  // padding-right: 24px;
+  padding-top: $sectionGap;
+  width: 65%;
+  margin: 0 auto;
+}
+
+.charts-top {
+    // animation: bounce; /* referring directly to the animation's @keyframe declaration */
+    animation-duration: 3s; /* don't forget to set a duration! */
 }
 
 .charts {
@@ -119,13 +132,11 @@ strong {
 
 .charts-bottom {
   padding-bottom: $sectionGap;
+  animation-duration: 3s; /* don't forget to set a duration! */
 }
 
 .nft {
   text-align: center;
-
-  // animation: bounce; /* referring directly to the animation's @keyframe declaration */
-  animation-duration: 2s; /* don't forget to set a duration! */
 }
 
 .hidden {

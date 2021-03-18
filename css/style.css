@@ -78,6 +78,10 @@ strong {
   color: #5c6064;
 }
 
+strong, em {
+  color: #6a7a8a;
+}
+
 .main {
   max-width: 1128px;
   padding-left: 24px;

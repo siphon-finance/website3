@@ -9,7 +9,7 @@ $font-weight: (
 // $topLight: #1d1d1d;
 $logoYellow: #d4c956;
 $logoDark: #474644;
-$sectionGap: 15vh;
+$sectionGap: 14vh;
 
 @mixin flexCenter {
   display: flex;
@@ -27,7 +27,7 @@ body {
 
   // background: url(./images/videoblocks-blue-business-background-2_h3cvzluwb_thumbnail-full01.png); *** NEEDS TO CHANGE ***
 
-  background-color: #1d1d1d;
+  background-color: black;
 
   // filter: grayscale(20%);
   line-height: 2em;
@@ -76,6 +76,10 @@ h3 {
   font-size: 1.85rem;
 }
 
+p {
+  margin: 0
+}
+
 .header-title {
   padding-left: 2%;
 }
@@ -121,8 +125,8 @@ strong {
   margin: 0 auto;
 }
 
-.charts p {
-  padding-top: 7vh;
+.charts-p {
+  padding-top: 5vh;
 }
 
 
@@ -228,7 +232,7 @@ span {
     padding-bottom: 10px;
   }
 
-  .section-under {
-    padding-top: 3vh;
+  .chart1, .chart2 {
+    padding-top: 10px;
   }
 }

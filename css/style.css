@@ -1,7 +1,11 @@
 body {
   width: 100%;
   height: 100%;
-  background-color: black;
+  background: url(../images/websitebg.png);
+  background-position: center;
+  background-attachment: fixed;
+  webkit-background-size: cover;
+  background-size: cover;
   line-height: 2em;
 }
 
@@ -13,7 +17,7 @@ body {
 }
 
 h1 {
-  font-family: "Heebo", sans-serif;
+  font-family: "Oswald", sans-serif;
   font-weight: mp-get(("reg": 400, "med": 500, "bold": 900), med);
   font-size: 44px;
   padding-top: 10vh;
@@ -22,7 +26,7 @@ h1 {
 }
 
 h2 {
-  font-family: "Heebo", sans-serif;
+  font-family: "Oswald", sans-serif;
   font-weight: mp-get(("reg": 400, "med": 500, "bold": 900), med);
   font-size: 38px;
   color: #ffffff;
@@ -39,6 +43,10 @@ h2 {
   border-color: #d4c956 !important;
 }
 
+.btn {
+  font-family: "Blinker", sans-serif;
+}
+
 .chart-btn:hover {
   color: black !important;
   background-color: #d4c956;
@@ -46,13 +54,14 @@ h2 {
 
 p,
 li {
-  font-family: "Open Sans", sans-serif;
+  font-family: "Blinker", sans-serif;
   font-size: 20px;
   color: white;
   list-style: circle;
 }
 
 h3 {
+  font-family: "Oswald", sans-serif;
   color: #d4c956;
   font-size: 1.85rem;
 }
@@ -124,6 +133,7 @@ hr {
 
 .follow {
   color: #474644;
+  font-family: "Oswald", sans-serif;
 }
 
 .follow-box {
@@ -166,7 +176,6 @@ span {
 }
 
 .button {
-  font: "Heebo", sans-serif !important;
   padding: 15px 40px;
   margin-right: 10px;
   margin-top: 15px;

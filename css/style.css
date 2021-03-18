@@ -77,23 +77,25 @@ strong {
 
 .presale,
 .nft,
-.follow,
-.charts {
+.follow {
   padding-top: 14vh;
   max-width: 1128px;
   padding-left: 24px;
   padding-right: 24px;
 }
 
+.charts {
+  max-width: 1128px;
+  padding-left: 24px;
+  padding-right: 24px;
+  padding-top: 9vh;
+  padding-bottom: 10vh;
+}
+
 .roadmap {
   padding-top: 14vh;
   width: 65%;
   margin: 0 auto;
-}
-
-.charts {
-  padding-top: 14vh;
-  padding-bottom: 10vh;
 }
 
 .chart1, .chart2 {
@@ -207,7 +209,7 @@ span {
     text-align: center;
   }
   .chart1, .chart2 {
-    padding-top: 10px;
+    padding-top: 8px;
   }
   .roadmap {
     width: 100%;

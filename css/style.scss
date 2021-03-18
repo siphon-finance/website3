@@ -63,6 +63,16 @@ h2 {
   text-decoration: none;
 }
 
+.chart-btn {
+  color: $logoYellow !important;
+  border-color: $logoYellow !important;
+}
+
+.chart-btn:hover {
+  color: black !important;
+  background-color: $logoYellow;
+}
+
 p,
 li {
   font-family: $secondary-font;
@@ -111,12 +121,11 @@ strong {
   padding-top: $sectionGap;
   width: 65%;
   margin: 0 auto;
-  // animation-duration: 3s;
 }
 
 .charts {
   padding-top: $sectionGap;
-  padding-bottom: $sectionGap
+  padding-bottom: 10vh
 }
 
 .chart1, .chart2 {
@@ -196,6 +205,10 @@ span {
   padding-top: 5vh;
 }
 
+.animatedParent {
+  overflow: hidden;
+}
+
 @media screen and (max-width: 588px) {
   .main-logo {
     margin: 0 auto;
@@ -228,11 +241,17 @@ span {
     text-align: center;
   }
 
+  .chart1, .chart2 {
+    padding-top: 10px;
+  }
+
+  .roadmap {
+    width: 100%;
+  }
+
   .follow h3 {
     padding-bottom: 10px;
   }
 
-  .chart1, .chart2 {
-    padding-top: 10px;
-  }
+
 }
